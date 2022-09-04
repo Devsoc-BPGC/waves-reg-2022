@@ -1,0 +1,63 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.container {
+  background-image: url("./img/background.png");
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img {
+  height: 8rem;
+  width: 8rem;
+  object-fit: contain;
+  padding: 0%;
+  margin: 0%;
+}
+
+.logo {
+  margin: 2rem;
+  width: 12rem;
+  height: 12rem;
+  filter: drop-shadow(0 0 0.75rem white);
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.link {
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 15rem;
+  color: black;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 2rem;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+}
+
+.link:hover {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+}
