@@ -13,12 +13,121 @@
         <img src="img/logo.jpeg" alt="Waves 2022 Logo" />
       </div>
       <div class="links">
-        <a href="" target="_blank" class="link">Link 1</a>
-        <a href="" target="_blank" class="link">Link 2</a>
-        <a href="" target="_blank" class="link">Link 3</a>
-        <a href="" target="_blank" class="link">Link 4</a>
-        <a href="" target="_blank" class="link">Link 5</a>
+        <a id="link" class="link">Register here</a>
+        <a href="" target="_blank" class="link">Payment here</a>
+        <a href="/Rulebook22.pdf" target="_blank" class="link" download="Waves Rulebook 2022">Rulebook Waves'22</a>
+        <a id="link2" class="link">Moot court registration</a>
+        <a href="" target="_blank" class="link">Registration queries</a>
+        <a href="" target="_blank" class="link">Event queries</a>
       </div>
+      <div id="popup1" class="popup">   
+          <div class="form">
+            <span class="close">&times;</span>
+            <h2 class="register-heading">Registration</h2>
+              <form method="post" autocomplete="off" name="google-sheet1">
+                  <div class="form-group">
+                      <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
+                  </div>
+                  <div class="form-group">
+                      <input type="number" name="Phone" class="form-control" placeholder="Your Contact Number *" value="" required=""/>
+                  </div>
+                  <div class="form-group">
+                      <input type="submit" name="submit" class="submit-btn" value="Register" />
+                  </div>
+              </form>
+          </div>
+   
+          <script>
+            const scriptURL1 = 'https://script.google.com/macros/s/AKfycbztxWdhLkx9n9BU8ZvDUGI0ySL5dUUPink1G9vcis_ZqW-7asB-omLjzUB-noqE1rXz/exec'
+            const form1 = document.forms['google-sheet1']
+          
+            form1.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL1, { method: 'POST', body: new FormData(form1)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      </div>
+
+      <div id="popup2" class="popup">   
+        <div class="form">
+          <span class="close">&times;</span>
+          <h2 class="register-heading">Moot Court Registration</h2>
+            <form method="post" autocomplete="off" name="google-sheet2">
+                <div class="form-group">
+                    <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
+                </div>
+                <div class="form-group">
+                    <input type="number" name="Phone" class="form-control" placeholder="Your Contact Number *" value="" required=""/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" class="submit-btn" value="Register" />
+                </div>
+            </form>
+        </div>
+ 
+        <script>
+          const scriptURL2 = 'https://script.google.com/macros/s/AKfycbzc4OJ1o6x1FedeBoAMfh_bg0MreH5HPJ8JH-kRx9-GYdYlYG2ZnLdBjMd8RatfYW5V/exec'
+          const form2 = document.forms['google-sheet2']
+        
+          form2.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL2, { method: 'POST', body: new FormData(form2)})
+              .then(response => alert("You have registered for MOOT Court 2022"))
+              .catch(error => console.error('Error!', error.message))
+          })
+        </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </div>
+
+      <script>
+        // Get the modal
+        var modal1 = document.getElementById("popup1");
+        var modal2 = document.getElementById("popup2");
+        
+        // Get the button that opens the modal
+        var btn1 = document.getElementById("link");
+        var btn2 = document.getElementById("link2");
+        
+        // Get the <span> element that closes the modal
+        var span1 = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn1.onclick = function() {
+          modal1.style.display = "block";
+        }
+
+        btn2.onclick = function() {
+          modal2.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function() {
+          modal1.style.display = "none";
+        }
+        
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal1 || event.target == modal2) {
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+          }
+        }
+        </script>
+
     </div>
   </body>
 </html>
