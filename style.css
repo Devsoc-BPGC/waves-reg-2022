@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  background-image: url("./img/background.png");
+  background-image: url("./assets/img/background.png");
   background-color: black;
   background-size: cover;
   background-position: center;
@@ -17,19 +17,18 @@ body {
 }
 
 img {
-  height: 8rem;
-  width: 8rem;
+  height: 30rem;
+  width: 30rem;
   object-fit: contain;
   padding: 0%;
   margin: 0%;
 }
 
 .logo {
-  margin: 2rem;
-  width: 12rem;
-  height: 12rem;
-  filter: drop-shadow(0 0 0.75rem white);
-  background-color: black;
+  width: 30rem;
+  height: 30rem;
+  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+  
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -44,9 +43,9 @@ img {
 
 .link {
   margin: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(161, 156, 156, 0.1);
   width: 15rem;
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 2rem;
@@ -62,19 +61,20 @@ img {
   font-weight: bolder;
 }
 
-.popup {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+#mask {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
+  margin: 0%;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
 }
+
+
 
 .form {
   background-color: rgba(255, 255, 255, 0.8);
@@ -89,6 +89,8 @@ img {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-control {
@@ -130,7 +132,7 @@ img {
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: rgb(71, 71, 71);
-}
+} 
 
 .close {
   color: #818181;
