@@ -34,7 +34,7 @@ const registerLink = document.getElementById('register-link')
   mootRegisterForm.style.display = "block"
 })
  
-for (let closeBtn in document.getElementsByClassName("close")) {
+for (let closeBtn in document.getElementsByClassName("close")[0]) {
     closeBtn.onclick = () => {
         mask.style.display = "none"
         registerForm.style.display = "none"

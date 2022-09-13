@@ -17,18 +17,15 @@ body {
 }
 
 img {
-  height: 30rem;
   width: 30rem;
   object-fit: contain;
-  padding: 0%;
+  padding-left: 30px;
   margin: 0%;
 }
 
 .logo {
   width: 30rem;
-  height: 30rem;
   filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
-  
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -43,13 +40,13 @@ img {
 
 .link {
   margin: 0.5rem;
-  background-color: rgba(161, 156, 156, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 15rem;
   color: rgb(255, 255, 255);
   padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 2rem;
-  border-color: black;
+  border-color: rgb(255, 255, 255, 0.5);
   border-style: solid;
   border-width: thin;
   text-align: center;
@@ -61,12 +58,10 @@ img {
   font-weight: bolder;
 }
 
-
 #mask {
   display: none;
   position: fixed; 
-  z-index: 1; 
-  padding-top: 100px;
+  top: 0;
   margin: 0%;
   width: 100%; 
   height: 100%; 
@@ -74,32 +69,30 @@ img {
   background-color: rgba(0,0,0,0.4); 
 }
 
-
-
 .form {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 15rem;
-  color: black;
+  background-color: rgba(0, 0, 0);
+  z-index: 1; 
+  width: 17rem;
+  height: 25rem;
+  color: rgb(255, 255, 255);
   padding: 1rem 2rem;
   text-decoration: none;
-  border-radius: 1rem;
-  border-color: black;
+  border-color: rgb(255, 255, 255);
   border-style: solid;
   border-width: thin;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: none;
+  position: fixed;
+  top: 350px;
 }
 
 .form-control {
   margin: 0.5rem;
   background-color: rgba(255, 255, 255, 0);
   width: 10rem;
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 1rem 2rem;
-  border-color: black;
+  border-color: rgb(255, 255, 255);
   border-style: solid;
   border-width: thin;
   text-align: center;
@@ -108,21 +101,21 @@ img {
 .submit-btn {
   margin: 0.5rem;
   background-color: rgba(255, 255, 255, 0);
-  color: black;
+  color: white;
   padding: 1rem 2rem;
-  border-color: black;
+  border-color: white;
   border-style: solid;
   border-width: thin;
   text-align: center;
 }
 
 .submit-btn:hover {
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(71, 71, 71);
+  color: rgb(255, 255, 255);
   opacity: 1; /* Firefox */
 }
 
@@ -143,11 +136,11 @@ img {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
 }
 
 .register-heading {
-  text-decoration: underline;
+  text-decoration: none;
 }
