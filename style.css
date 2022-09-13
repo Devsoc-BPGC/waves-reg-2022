@@ -40,22 +40,20 @@ img {
 
 .link {
   margin: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0);
   width: 15rem;
   color: rgb(255, 255, 255);
   padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 2rem;
-  border-color: rgb(255, 255, 255, 0.5);
-  border-style: solid;
-  border-width: thin;
+ 
   text-align: center;
 }
 
 .link:hover {
-  background-color: black;
-  color: white;
-  font-weight: bolder;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition-duration: 0.5s;
 }
 
 #mask {
