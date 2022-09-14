@@ -25,6 +25,20 @@ img {
   margin: 0%;
 }
 
+#event-list {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  height: 10rem;
+  overflow-y: scroll;
+  margin-top: 2rem;
+  border:2px solid #ccc; 
+}
+
+.event-item {
+  margin: .5rem;
+}
+
 .links {
   display: flex;
   flex-direction: column;
@@ -63,7 +77,7 @@ img {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.form {
+#moot-court-registration-form {
   display: none;
   position: fixed;
   z-index: 10;
@@ -73,6 +87,25 @@ img {
   color: white;
   padding: 1rem 2rem;
   margin-top: 10rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+  flex-direction: column;
+}
+
+#registration-form {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  background-color: black;
+  width: 25rem;
+  height: 40rem;
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
   text-decoration: none;
   border-radius: 1rem;
   border-color: black;
