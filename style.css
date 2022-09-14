@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  background-image: url("./img/background.png");
+  background-image: url("./assets/imgs/background.png");
   background-color: black;
   background-size: cover;
   background-position: center;
@@ -17,23 +17,12 @@ body {
 }
 
 img {
-  height: 8rem;
-  width: 8rem;
+  height: 13rem;
+  width: 26rem;
+  filter: drop-shadow(0 0 1rem black);
   object-fit: contain;
   padding: 0%;
   margin: 0%;
-}
-
-.logo {
-  margin: 2rem;
-  width: 12rem;
-  height: 12rem;
-  filter: drop-shadow(0 0 0.75rem white);
-  background-color: black;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .links {
@@ -44,9 +33,9 @@ img {
 
 .link {
   margin: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: black;
+  color: white;
   width: 15rem;
-  color: black;
   padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 2rem;
@@ -57,7 +46,89 @@ img {
 }
 
 .link:hover {
+  background-color: rgba(255, 255, 255);
+  color: black;
+  font-weight: bolder;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#mask {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.form {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  background-color: black;
+  width: 18rem;
+  height: 28rem;
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 10rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+  flex-direction: column;
+}
+
+.form-control {
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  width: 10rem;
+  color: white;
+  padding: 1rem 2rem;
+  border-color: white;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+}
+
+.submit-btn {
+  margin-top: 2rem;
   background-color: black;
   color: white;
-  font-weight: bolder;
+  width: 10rem;
+  height: 3rem;
+  border-color: white;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  color: black;
+  background-color: whitesmoke;
+}
+
+.close {
+  color: #818181;
+  font-size: 30px;
+  font-weight: bold;
+  float: right;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-heading {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
