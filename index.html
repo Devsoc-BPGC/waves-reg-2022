@@ -6,33 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waves 2022</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="logo">
-        <img src="/assets/img/logo.png" alt="Waves 2022 Logo" />
-      </div>
+      <img src="assets/imgs/logo.png" alt="Waves 2022 Logo" />
       <div class="links">
-        <a id="register-link" class="link">Register here</a>
-        <a href="" target="_blank" class="link">Payment here</a>
+        <a id="registration-link" class="link">Register Here</a>
+        <a href="" target="_blank" class="link">Payment Here</a>
         <a
-          href="/assests/pdf/Rulebook22.pdf"
+          href="assets/Rulebook.pdf"
           target="_blank"
           class="link"
-          download="Waves Rulebook 2022"
+          download="Waves 2022 Rulebook"
         >
           Rulebook Waves'22
         </a>
-        <a id="moot-register-link" class="link">Moot court registration</a>
-        <a href="" target="_blank" class="link">Registration queries</a>
-        <a href="" target="_blank" class="link">Event queries</a>
+        <a id="moot-court-registration-link" class="link"
+          >Moot Court Registration</a
+        >
+        <a
+          href="mailto:events@bits-waves.org?subject=Registration%20Query%20Waves%202022"
+          target="_blank"
+          class="link"
+          >Registration queries</a
+        >
+        <a
+          href="mailto:events@bits-waves.org?subject=Event%20Query%20Waves%202022"
+          target="_blank"
+          class="link"
+          >Event queries</a
+        >
       </div>
       <div id="mask"></div>
-
-      <div id="register-form" class="form">
+      <div class="form" id="registration-form">
         <span class="close">&times;</span>
-        <h2 class="register-heading">Registration</h2>
-        <form autocomplete="off" name="google-sheet1">
+        <h2 class="form-heading">Registration</h2>
+        <form name="registration">
           <div class="form-group">
             <input
               type="text"
@@ -55,13 +65,87 @@
           </div>
           <div class="form-group">
             <input
-              type="number"
+              type="tel"
               name="Phone"
               class="form-control"
               placeholder="Your Contact Number *"
               value=""
               required=""
             />
+          </div>
+          <div class="form-group" id="event-list">
+            <div class="event-item">
+              <input
+                type="checkbox"
+                id="event-inverse"
+                name="event-inverse"
+                value="inverse"
+              />
+              <label for="event-inverse"> InVerse </label>
+            </div>
+            <div class="event-item">
+              <input
+                type="checkbox"
+                id="event-inverse"
+                name="event-inverse"
+                value="inverse"
+              />
+              <label for="event-inverse"> InVerse </label>
+            </div>
+            <div class="event-item">
+              <input
+                type="checkbox"
+                id="event-inverse"
+                name="event-inverse"
+                value="inverse"
+              />
+              <label for="event-inverse"> InVerse </label>
+            </div>
+            <div class="event-item">
+              <input
+                type="checkbox"
+                id="event-inverse"
+                name="event-inverse"
+                value="inverse"
+              />
+              <label for="event-inverse"> InVerse </label>
+            </div>
+            <div class="event-item">
+              <input
+                type="checkbox"
+                id="event-inverse"
+                name="event-inverse"
+                value="inverse"
+              />
+              <label for="event-inverse"> InVerse </label>
+            </div>
+            <div class="event-item">
+              <input
+                type="checkbox"
+                id="event-smtf"
+                name="event-smtf"
+                value="smtf"
+              />
+              <label for="event-smtf"> Show Me The Funny </label>
+            </div>
+            <div class="event-item">
+              <input
+                type="checkbox"
+                id="event-smtf"
+                name="event-smtf"
+                value="smtf"
+              />
+              <label for="event-smtf"> Show Me The Funny </label>
+            </div>
+            <div class="event-item">
+              <input
+                type="checkbox"
+                id="event-smtf"
+                name="event-smtf"
+                value="smtf"
+              />
+              <label for="event-smtf"> Show Me The Funny </label>
+            </div>
           </div>
           <div class="form-group">
             <input
@@ -73,11 +157,10 @@
           </div>
         </form>
       </div>
-
-      <div id="moot-register-form" class="form">
+      <div class="form" id="moot-court-registration-form">
         <span class="close">&times;</span>
-        <h2 class="register-heading">Moot Court Registration</h2>
-        <form autocomplete="off" name="google-sheet2">
+        <h2 class="form-heading">Moot Court Registration</h2>
+        <form name="moot-court-registration">
           <div class="form-group">
             <input
               type="text"
@@ -100,7 +183,7 @@
           </div>
           <div class="form-group">
             <input
-              type="number"
+              type="tel"
               name="Phone"
               class="form-control"
               placeholder="Your Contact Number *"
