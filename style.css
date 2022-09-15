@@ -1,0 +1,171 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.container {
+  background-image: url("./assets/imgs/background.png");
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img {
+  height: 13vh;
+  width: 26vw;
+  min-width: 322px;
+  min-height: 161px;
+  filter: drop-shadow(0 0 1rem black);
+  object-fit: contain;
+  padding: 0%;
+  margin: 0%;
+}
+
+#event-list {
+  font-size: large;
+  height: 10rem;
+  overflow-y: scroll;
+  margin-top: 2rem;
+  border: 2px solid #ccc;
+
+}
+
+.event-item {
+  margin: 0.5rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.link {
+  margin: 0.5rem;
+  background-color: black;
+  color: white;
+  width: 13rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 2rem;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255);
+  color: black;
+  font-weight: bolder;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#mask {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#moot-court-registration-form {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  background-color: black;
+  width: 18rem;
+  height: 28rem;
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 10rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+  flex-direction: column;
+}
+
+#registration-form {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  background-color: black;
+  width: 25rem;
+  height: 40rem;
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+}
+
+.form-control {
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  width: 10rem;
+  color: white;
+  padding: 1rem 2rem;
+  border-color: white;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+}
+
+.submit-btn {
+  margin-top: 2rem;
+  background-color: rgb(255, 255, 255, 0.9);
+  color: black;
+  width: 10rem;
+  height: 3rem;
+  border-color: white;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.close {
+  color: #818181;
+  font-size: 30px;
+  font-weight: bold;
+  float: right;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-heading {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.ul {
+  list-style-type: lower-roman;
+}
+
+
+
