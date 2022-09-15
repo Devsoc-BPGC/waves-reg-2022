@@ -23,7 +23,7 @@ img {
   min-height: 161px;
   filter: drop-shadow(0 0 1rem black);
   object-fit: contain;
-  padding: 0%;
+  padding-left: 30px;
   margin: 0%;
 }
 
@@ -55,10 +55,42 @@ img {
   padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 2rem;
-  border-color: black;
+ 
+  text-align: center;
+}
+
+.link:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition-duration: 0.5s;
+}
+
+#mask {
+  display: none;
+  position: fixed; 
+  top: 0;
+  margin: 0%;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.form {
+  background-color: rgba(0, 0, 0);
+  z-index: 1; 
+  width: 17rem;
+  height: 25rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-color: rgb(255, 255, 255);
   border-style: solid;
   border-width: thin;
   text-align: center;
+  display: none;
+  position: fixed;
+  top: 350px;
 }
 
 .link:hover {
@@ -163,4 +195,15 @@ img {
 .form-heading {
   margin-top: 3rem;
   margin-bottom: 2rem;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.register-heading {
+  text-decoration: none;
 }
