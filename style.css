@@ -28,13 +28,12 @@ img {
 }
 
 #event-list {
-  display: flex;
-  flex-direction: column;
   font-size: large;
   height: 10rem;
   overflow-y: scroll;
   margin-top: 2rem;
   border: 2px solid #ccc;
+
 }
 
 .event-item {
@@ -114,7 +113,6 @@ img {
   border-style: solid;
   border-width: thin;
   text-align: center;
-  flex-direction: column;
 }
 
 .form-control {
@@ -164,3 +162,10 @@ img {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
+
+.ul {
+  list-style-type: lower-roman;
+}
+
+
+
