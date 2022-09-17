@@ -7,10 +7,10 @@ document.getElementById("registration-link").addEventListener('click', () => {
     registrationForm.style.display = "block"
 })
 
-document.getElementById("moot-court-registration-link").addEventListener('click', () => {
-    mask.style.display = "block"
-    mootCourtRegistrationForm.style.display = "block"
-})
+// document.getElementById("moot-court-registration-link").addEventListener('click', () => {
+//     mask.style.display = "block"
+//     mootCourtRegistrationForm.style.display = "block"
+// })
 
 mask.addEventListener('click', close)
 
