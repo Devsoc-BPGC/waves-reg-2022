@@ -1,207 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Waves 2022</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <img src="assets/imgs/logo.png" alt="Waves 2022 Logo" />
-      <div class="links">
-        <a id="registration-link" class="link">Register Here</a>
-        <a href="" target="_blank" class="link">Payment Here</a>
-        <a
-          href="assets/Rulebook.pdf"
-          target="_blank"
-          class="link"
-          download="Waves 2022 Rulebook"
-        >
-          Rulebook Waves'22
-        </a>
-        <a id="moot-court-registration-link" class="link"
-          >Moot Court Registration</a
-        >
-        <a
-          href="mailto:events@bits-waves.org?subject=Registration%20Query%20Waves%202022"
-          target="_blank"
-          class="link"
-          >Registration queries</a
-        >
-        <a
-          href="mailto:events@bits-waves.org?subject=Event%20Query%20Waves%202022"
-          target="_blank"
-          class="link"
-          >Event queries</a
-        >
-      </div>
-      <div id="mask"></div>
-      <div class="form" id="registration-form">
-        <span class="close">&times;</span>
-        <h2 class="form-heading">Registration</h2>
-        <form name="registration">
-          <div class="form-group">
-            <input
-              type="text"
-              name="Name"
-              class="form-control"
-              placeholder="Your Name *"
-              value=""
-              required=""
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              name="Email"
-              class="form-control"
-              placeholder="Your Email *"
-              value=""
-              required=""
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="tel"
-              name="Phone"
-              class="form-control"
-              placeholder="Your Contact Number *"
-              value=""
-              required=""
-            />
-          </div>
-          <div class="form-group" id="event-list">
-            <div class="event-item">
-              <input
-                type="checkbox"
-                id="event-inverse"
-                name="event-inverse"
-                value="inverse"
-              />
-              <label for="event-inverse"> InVerse </label>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Waves 2022</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <img src="assets/imgs/logo.png" alt="Waves 2022 Logo" />
+            <div class="links">
+                <a id="registration-link" class="link">Register Here</a>
+                <a href="" target="_blank" class="link">Payment Here</a>
+                <a
+                    href="https://drive.google.com/file/d/12lswgligeU1Gyp5yzT134BzMu8tn5d11/view?usp=sharing"
+                    target="_blank"
+                    class="link"
+                    download="Waves 2022 Rulebook"
+                >
+                    Rulebook Waves'22
+                </a>
+                <a
+                    href="https://docs.google.com/forms/d/1rzlqaWCrHjlVC-eu05P3Br9whnYRRYTtbLsgJo4lGmI/viewform?edit_requested=true"
+                    id="moot-court-registration-link"
+                    class="link"
+                    >Moot Court Registration</a
+                >
+                <a href="http://wa.me/919425015072" target="_blank" class="link"
+                    >Registration queries</a
+                >
+                <a
+                    href="mailto:events@bits-waves.org?subject=Event%20Query%20Waves%202022"
+                    target="_blank"
+                    class="link"
+                    >Event queries</a
+                >
             </div>
-            <div class="event-item">
-              <input
-                type="checkbox"
-                id="event-inverse"
-                name="event-inverse"
-                value="inverse"
-              />
-              <label for="event-inverse"> InVerse </label>
+            <div id="mask"></div>
+            <div class="form" id="registration-form">
+                <span class="close">&times;</span>
+                <h2 class="form-heading">Registration</h2>
+                <form name="registration">
+                    <div class="form-group">
+                        <input
+                            type="text"
+                            name="Name"
+                            class="form-control"
+                            placeholder="Your Name *"
+                            value=""
+                            required=""
+                        />
+                    </div>
+                    <div class="form-group">
+                        You indentify as ...<br />
+                        <input
+                            type="radio"
+                            id="gender_male"
+                            name="Gender"
+                            value="Male"
+                            required
+                        />
+                        <label for="gender_male">Male</label>
+                        <input
+                            type="radio"
+                            id="gender_female"
+                            name="Gender"
+                            value="Female"
+                            required
+                        />
+                        <label for="gender_female">Female</label>
+                        <input
+                            type="radio"
+                            id="gender_other"
+                            name="Gender"
+                            value="Other"
+                            required
+                        />
+                        <label for="gender_other">Other</label>
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="text"
+                            name="College"
+                            class="form-control"
+                            placeholder="Your college *"
+                            value=""
+                            required=""
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="text"
+                            name="Email"
+                            class="form-control"
+                            placeholder="Your Email *"
+                            value=""
+                            required=""
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="tel"
+                            name="Phone"
+                            class="form-control"
+                            placeholder="Your Contact Number *"
+                            value=""
+                            required=""
+                        />
+                    </div>
+                    <div class="form-group" id="event-list">
+                        <div class="event-group">
+                            <div class="event-title">Florence</div>
+                            <div class="event-subtitle">Dance</div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-footloose"
+                                    name="Footloose"
+                                    value="yes"
+                                />
+                                <label for="event-footloose"> Footloose </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-natyanjali"
+                                    name="Natyanjali"
+                                    value="yes"
+                                />
+                                <label for="event-natyanjali">
+                                    Natyanjali
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-sizzle"
+                                    name="Sizzle"
+                                    value="yes"
+                                />
+                                <label for="event-sizzle"> Sizzle </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-dancing-duo"
+                                    name="Dancing Duo"
+                                    value="yes"
+                                />
+                                <label for="event-dancing-duo">
+                                    Dancing Duo
+                                </label>
+                            </div>
+                            <div class="event-subtitle">Drama</div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-rangmanch"
+                                    name="Rangmanch"
+                                    value="yes"
+                                />
+                                <label for="event-rangmanch"> Rangmanch </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-nukkad-natak"
+                                    name="Nukkad Natak"
+                                    value="yes"
+                                />
+                                <label for="event-nukkad-natak">
+                                    Nukkad Natak
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-hear-me-out"
+                                    name="Hear Me Out!"
+                                    value="yes"
+                                />
+                                <label for="event-hear-me-out">
+                                    Hear Me Out!
+                                </label>
+                            </div>
+                            <div class="event-subtitle">Music</div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-indian-rock"
+                                    name="Indian Rock"
+                                    value="yes"
+                                />
+                                <label for="event-indian-rock">
+                                    Indian Rock
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-jukebox"
+                                    name="Jukebox"
+                                    value="yes"
+                                />
+                                <label for="event-jukebox"> Jukebox </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-solonote"
+                                    name="Solonote"
+                                    value="yes"
+                                />
+                                <label for="event-solonote"> Solonote </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-silence-of-the-amps"
+                                    name="Silence of the Amps"
+                                    value="yes"
+                                />
+                                <label for="event-silence-of-the-amps">
+                                    Silence of the Amps
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-rapsody"
+                                    name="Rapsody"
+                                    value="yes"
+                                />
+                                <label for="event-rapsody"> Rapsody </label>
+                            </div>
+                        </div>
+                        <div class="event-group">
+                            <span class="event-title"> Beau Vista </span>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-lets-not-get-wasted"
+                                    name="Let's Not Get Wasted"
+                                    value="yes"
+                                />
+                                <label for="event-lets-not-get-wasted">
+                                    Let's Not Get Wasted
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-kick-start"
+                                    name="Kick StART"
+                                    value="yes"
+                                />
+                                <label for="event-kick-start">
+                                    Kick StART
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-moteef"
+                                    name="Moteef"
+                                    value="yes"
+                                />
+                                <label for="event-moteef"> Moteef </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-artathon"
+                                    name="Artathon"
+                                    value="yes"
+                                />
+                                <label for="event-artathon"> Artathon </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-blind-art"
+                                    name="Blind Art"
+                                    value="yes"
+                                />
+                                <label for="event-blind-art"> Blind Art </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-glam-up"
+                                    name="Glam Up!"
+                                    value="yes"
+                                />
+                                <label for="event-glam-up"> Glam Up! </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-la-croquis-marquee"
+                                    name="La Croquis Marquee"
+                                    value="yes"
+                                />
+                                <label for="event-la-croquis-marquee">
+                                    La Croquis Marquee
+                                </label>
+                            </div>
+                        </div>
+                        <div class="event-group">
+                            <span class="event-title"> Carpe Dictum </span>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-inverse"
+                                    name="InVerse"
+                                    value="yes"
+                                />
+                                <label for="event-inverse"> InVerse </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-cultural-gauntlet"
+                                    name="Cultural Gauntlet"
+                                    value="yes"
+                                />
+                                <label for="event-cultural-gauntlet">
+                                    Cultural Gauntlet
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-the-lit-quiz"
+                                    name="The Lit Quiz"
+                                    value="yes"
+                                />
+                                <label for="event-the-lit-quiz">
+                                    The Lit Quiz
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-word-games"
+                                    name="Word Games"
+                                    value="yes"
+                                />
+                                <label for="event-word-games">
+                                    Word Games
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-melas"
+                                    name="Melas"
+                                    value="yes"
+                                />
+                                <label for="event-melas"> Melas </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-querencia"
+                                    name="Querencia"
+                                    value="yes"
+                                />
+                                <label for="event-querencia"> Querencia </label>
+                            </div>
+                        </div>
+                        <div class="event-group">
+                            <span class="event-title">
+                                Film & Photography
+                            </span>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-short"
+                                    name="Sho(r)t"
+                                    value="yes"
+                                />
+                                <label for="event-short"> Sho(r)t </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-oh-snap"
+                                    name="Oh Snap!"
+                                    value="yes"
+                                />
+                                <label for="event-oh-snap"> Oh Snap! </label>
+                            </div>
+                        </div>
+                        <div class="event-group">
+                            <span class="event-title"> The Quiz Fest </span>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-waves-open"
+                                    name="Waves Open"
+                                    value="yes"
+                                />
+                                <label for="event-waves-open">
+                                    Waves Open
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-mythomagic"
+                                    name="Mythomagic"
+                                    value="yes"
+                                />
+                                <label for="event-mythomagic">
+                                    Mythomagic
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-vices-quiz"
+                                    name="Vices Quiz"
+                                    value="yes"
+                                />
+                                <label for="event-vices-quiz">
+                                    Vices Quiz
+                                </label>
+                            </div>
+                        </div>
+                        <div class="event-group">
+                            <span class="event-title"> Specials </span>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-fashion-parade"
+                                    name="Fashion Parade"
+                                    value="yes"
+                                />
+                                <label for="event-fashion-parade">
+                                    Fashion Parade
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-mr-and-miss-waves"
+                                    name="Mr and Miss Waves"
+                                    value="yes"
+                                />
+                                <label for="event-mr-and-miss-waves">
+                                    Mr and Miss Waves
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-show-me-the-funny"
+                                    name="Show me the Funny"
+                                    value="yes"
+                                />
+                                <label for="event-show-me-the-funny">
+                                    Show me the Funny
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-strangely-familiar"
+                                    name="Strangely Familiar"
+                                    value="yes"
+                                />
+                                <label for="event-strangely-familiar">
+                                    Strangely Familiar
+                                </label>
+                            </div>
+                            <div class="event-item">
+                                <input
+                                    type="checkbox"
+                                    id="event-irshaad"
+                                    name="Irshad"
+                                    value="yes"
+                                />
+                                <label for="event-irshaad"> Irshad </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="submit"
+                            name="submit"
+                            class="submit-btn"
+                            value="Register"
+                        />
+                    </div>
+                </form>
             </div>
-            <div class="event-item">
-              <input
-                type="checkbox"
-                id="event-inverse"
-                name="event-inverse"
-                value="inverse"
-              />
-              <label for="event-inverse"> InVerse </label>
+            <div class="form" id="moot-court-registration-form">
+                <span class="close">&times;</span>
+                <h2 class="form-heading">Moot Court Registration</h2>
+                <form name="moot-court-registration">
+                    <div class="form-group">
+                        <input
+                            type="text"
+                            name="Name"
+                            class="form-control"
+                            placeholder="Your Name *"
+                            value=""
+                            required=""
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="text"
+                            name="Email"
+                            class="form-control"
+                            placeholder="Your Email *"
+                            value=""
+                            required=""
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="tel"
+                            name="Phone"
+                            class="form-control"
+                            placeholder="Your Contact Number *"
+                            value=""
+                            required=""
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="submit"
+                            name="submit"
+                            class="submit-btn"
+                            value="Register"
+                        />
+                    </div>
+                </form>
             </div>
-            <div class="event-item">
-              <input
-                type="checkbox"
-                id="event-inverse"
-                name="event-inverse"
-                value="inverse"
-              />
-              <label for="event-inverse"> InVerse </label>
-            </div>
-            <div class="event-item">
-              <input
-                type="checkbox"
-                id="event-inverse"
-                name="event-inverse"
-                value="inverse"
-              />
-              <label for="event-inverse"> InVerse </label>
-            </div>
-            <div class="event-item">
-              <input
-                type="checkbox"
-                id="event-smtf"
-                name="event-smtf"
-                value="smtf"
-              />
-              <label for="event-smtf"> Show Me The Funny </label>
-            </div>
-            <div class="event-item">
-              <input
-                type="checkbox"
-                id="event-smtf"
-                name="event-smtf"
-                value="smtf"
-              />
-              <label for="event-smtf"> Show Me The Funny </label>
-            </div>
-            <div class="event-item">
-              <input
-                type="checkbox"
-                id="event-smtf"
-                name="event-smtf"
-                value="smtf"
-              />
-              <label for="event-smtf"> Show Me The Funny </label>
-            </div>
-          </div>
-          <div class="form-group">
-            <input
-              type="submit"
-              name="submit"
-              class="submit-btn"
-              value="Register"
-            />
-          </div>
-        </form>
-      </div>
-      <div class="form" id="moot-court-registration-form">
-        <span class="close">&times;</span>
-        <h2 class="form-heading">Moot Court Registration</h2>
-        <form name="moot-court-registration">
-          <div class="form-group">
-            <input
-              type="text"
-              name="Name"
-              class="form-control"
-              placeholder="Your Name *"
-              value=""
-              required=""
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              name="Email"
-              class="form-control"
-              placeholder="Your Email *"
-              value=""
-              required=""
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="tel"
-              name="Phone"
-              class="form-control"
-              placeholder="Your Contact Number *"
-              value=""
-              required=""
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="submit"
-              name="submit"
-              class="submit-btn"
-              value="Register"
-            />
-          </div>
-        </form>
-      </div>
-    </div>
-    <script defer src="/script.js"></script>
-  </body>
+        </div>
+    </body>
 </html>
