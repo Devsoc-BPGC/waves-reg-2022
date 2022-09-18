@@ -33,8 +33,17 @@ img {
   border-bottom: solid 2px #888;
 }
 
+.event-group {
+  margin: 0.25rem 0;
+}
+
+.event-title {
+  font-size: 1.25rem;
+}
+
 .event-item {
   margin: 0.5rem;
+  text-align: start;
 }
 
 .links {
@@ -114,6 +123,17 @@ img {
   text-align: center;
   overflow-y: auto;
   max-height: 80vh;
+}
+
+#registration-form::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: transparent;
+}
+
+#registration-form::-webkit-scrollbar-thumb {
+  width: 0.5rem;
+  background-color: white;
+  border-radius: 0.25rem;
 }
 
 .form-control {
