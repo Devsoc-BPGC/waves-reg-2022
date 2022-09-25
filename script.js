@@ -24,7 +24,8 @@ function close() {
     mootCourtRegistrationForm.style.display = "none"
 }
 
-const registrationScript = 'https://script.google.com/macros/s/AKfycbztxWdhLkx9n9BU8ZvDUGI0ySL5dUUPink1G9vcis_ZqW-7asB-omLjzUB-noqE1rXz/exec'
+const registrationScript =
+    "https://script.google.com/macros/s/AKfycbwBFVuY2VQIQ2XexRoIx3sOXgr8Hm5ksGpSezqk5i630e14XNDbNywMwoFHaRc2sCN4/exec";
 const registration = document.forms['registration']
 
 registration.addEventListener('submit', e => {
