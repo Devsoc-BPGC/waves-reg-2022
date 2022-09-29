@@ -24,14 +24,21 @@ function close() {
     mootCourtRegistrationForm.style.display = "none"
 }
 
-const registrationScript =
-    "https://script.google.com/macros/s/AKfycbwBFVuY2VQIQ2XexRoIx3sOXgr8Hm5ksGpSezqk5i630e14XNDbNywMwoFHaRc2sCN4/exec";
+//const registrationScript =
+//    "https://script.google.com/macros/s/AKfycbwBFVuY2VQIQ2XexRoIx3sOXgr8Hm5ksGpSezqk5i630e14XNDbNywMwoFHaRc2sCN4/exec";
+const registrationScript = "https://script.google.com/macros/s/AKfycbztxWdhLkx9n9BU8ZvDUGI0ySL5dUUPink1G9vcis_ZqW-7asB-omLjzUB-noqE1rXz/exec";
 const registration = document.forms['registration']
+
+const spinner = document.getElementById('loader')
 
 registration.addEventListener('submit', e => {
     e.preventDefault()
+    spinner.style.display="block"
     fetch(registrationScript, { method: 'POST', body: new FormData(registration) })
-        .then(_ => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .then(_ => {alert("Registration Successful. Thank You .")
+                    spinner.style.display="none"
+                    mask.style.display = "none"
+                    registrationForm.style.display = "none"})
         .catch(error => console.error('Error!', error.message))
 })
 
